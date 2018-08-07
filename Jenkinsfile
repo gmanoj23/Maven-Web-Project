@@ -4,7 +4,9 @@ node {
 	   
 	stage('Checkouting'){
 
-          checkout scm
+          //checkout scm
+		git branch: 'stage', credentialsId: '5d9f9895-2946-4a9d-a5f6-6a516623d1fe', url: 'https://github.com/devopstrainingblr/Maven-Web-Project.git'
+
        }
 
        stage('BuildArtifact'){
